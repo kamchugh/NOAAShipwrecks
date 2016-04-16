@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link type="text/css" rel="stylesheet" href="Shipwrecks.css" />
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One'
+	rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Create Shipwreck</title>
 </head>
 <body>
 	<header>
-		<p>Add a shipwreck</p>
+		<a href=href="http://www.noaa.gov/"> <img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/NOAA_logo.svg/2000px-NOAA_logo.svg.png"
+			style="width: 30px; height: 30px;">
+		</a>
 	</header>
-	<div>
-	<form action="newShipwreck.do" method="POST">
-		<table>
+	<div id="wreckbackground">
+		<table id="editTable">
+			<tr>
+				<td colspan="2">
+					<h1>Log a Shipwreck</h1>
+					<form action="newShipwreck.do" method="POST">
+				</td>
+			</tr>
+
 			<tr>
 				<td>
-					
-						<p>NOAA Record number:</p>
-						<input type="text" name="record" value="" /><br />
+
+					<p>NOAA Record number:</p> <input type="text" name="record"
+					value="" /><br />
 				</td>
 				<td>
 					<p>Name of ship found:</p> <input type="text" name="nameofship"
@@ -31,42 +45,36 @@
 						<option value="Not Charted">Not charted</option>
 						<option value="no data available">Charted, but no data
 							available</option>
-				</select>
+				</select></td>
+			</tr>
+			<tr>
+				<td>
+					<p>Latitude:</p> <input type="text" name="latitute" value="" />
+				</td>
+				<td>
+					<p>Longitude:</p> <input type="text" name="longitude" value="" />
+					<br />
 				</td>
 			</tr>
 			<tr>
-			<td>
-				<p>Latitude:</p>
-				<input type="text" name="latitute" value="" /></td>
 				<td>
-				<p>Longitude:</p>
-				<input type="text" name="longitude" value="" />
-				<br />
-				</td>
-			</tr>
-			<tr>
-			<td>
-				<p>Depth:</p>
-				<input type="text" name="depth" value="" />
+					<p>Depth:</p> <input type="text" name="depth" value="" />
 				</td>
 				<td>
-				<p>Year Sunk:</p>
-				<input type="text" name="yearsunk" value="" />
+					<p>Year Sunk:</p> <input type="text" name="yearsunk" value="" />
 				</td>
 				<td>
-				<p>History:</p>
-				<input type="text" name="history" value="" />
+					<p>History:</p> <input type="text" name="history" value="" />
 				</td>
-				<td>
-				<input type="submit" value="Add Wreck" />
-				</td>
+				<td><input class="deletebutton" type="submit" value="Add Wreck" /></td>
 				<!-- 	figure out how to auto assign an id -->
-			</tr>	
+			</tr>
 		</table>
 		</form>
+		</table>
 	</div>
 	<footer>
-		<p>Designed by Kaylee McHugh</p>
+		
 	</footer>
 </body>
 

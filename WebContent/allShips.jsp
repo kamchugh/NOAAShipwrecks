@@ -13,20 +13,26 @@
 <title>All Shipwrecks</title>
 </head>
 <body class="bluebackground">
-	<table class="yellowbackground">
-	<tr>
-	<td>
-		<c:forEach var="wreck" items="${wrecks}">
-			<c:if test="${! empty(wreck)}">
-				<p><a href="getByRecord.do?name=${wreck.record}"> NOAA ID:
-					${wreck.record}</a>
-				Name of ship: ${wreck.nameofship} Danger of ship:
-					${wreck.dangerofship} Depth of ship: ${wreck.depth}</p>
-				<p> Lat: ${wreck.latitute} Long: ${wreck.longitude}</p>
-			</c:if>
-		</c:forEach>
-		</td>
-		</tr>
-	</table>
+	<div>
+		<h1 id="allshipwrecksheader">NOAA Shipwrecks</h1>
+	</div>
+	<c:forEach var="wreck" items="${wrecks}">
+		<c:if test="${! empty(wreck)}">
+			<table class="yellowbackground">
+				<tr>
+					<td><a id="recordbutton"
+						href="getByRecord.do?name=${wreck.record}"> NOAA ID:
+							${wreck.record}</a>
+						<p class="shipinfo">Name of ship: ${wreck.nameofship} Danger
+							of ship: ${wreck.dangerofship} Depth of ship: ${wreck.depth}</p>
+						<p class="shipinfo">Lat: ${wreck.latitute} Long:
+							${wreck.longitude}</p></td>
+							<td>
+						<a href="deleteShipwreck.do"><button class="deletebutton" type="button" name="delete"> X </button></a></td>
+				</tr>
+			</table>
+		</c:if>
+	</c:forEach>
+
 </body>
 </html>
