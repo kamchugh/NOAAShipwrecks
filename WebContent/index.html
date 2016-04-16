@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="Shipwrecks.css" />
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One'
+	rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>Shipwrecks</title>
+</head>
+<body>
+	<div class="mainimage">
+		<table class="headerbackground">
+			<tr>
+				<td>
+					<h1 class="headtext">GLOBAL SHIPWRECKS</h1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h2 class="headtext2">found using public NOAA data</h2>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="navbar">
+		<table class="centertable">
+			<tr>
+				<td><img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/NOAA_logo.svg/2000px-NOAA_logo.svg.png"
+					style="width: 30px; height: 30px;"><br /></td>
+				<td><a class="navelement" href="getAllShipwrecks.do">VIEW
+						ALL SHIPWRECKS</a><br /></td>
+				<td><a class="navelement" href="newShipwreck.html">ADD A
+						SHIPWRECK</a></td>
+			</tr>
+		</table>
+	</div>
+	<div id="shipwreckBackground">
+		<div class="floatleft">
+			<h2 id="visibility">View ships by visibility</h2>
+			<form action="getByCategory.do" method="GET">
+				<table id="visibilitytable">
+					<tr>
+						<td class="visibilityTable"><a
+							href="getByCategory.do?name=Visible">VISIBLE</a><br /></td>
+						<!-- "visible.jsp" -->
+					</tr>
+
+					<tr>
+						<td class="visibilityTable"><a
+							href="getByCategory.do?name=Submerged  nondangerous">SUBMERGED,
+								NOT DANGEROUS</a><br /></td>
+					</tr>
+					<tr>
+						<td class="visibilityTable"><a
+							href="getByCategory.do?name=Submerged  dangerous to surface navigation">SUBMERGED,
+								DANGEROUS</a></td>
+					</tr>
+					<tr>
+						<td class="visibilityTable"><a
+							href="getByCategory.do?name=Not Charted">NOT CHARTED</a><br /></td>
+					</tr>
+					<tr>
+						<td class="visibilityTable"><a
+							href="getByCategory.do?name=no data available">CHARTED, BUT
+								NO DATA</a></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="floatright">
+			<h2 id="specificinfo">enter specific information</h2>
+			<div class="whitebackground">
+			<form action="SearchShipwrecks.do" method="GET">
+				<p>NOAA Record Number</p>
+				<input type="text" name="record" /> <input
+					type="submit" value="Get Shipwreck Data" />
+			</form>
+			
+			<form action="SearchShipwrecksByName.do" method="GET">
+				<p>Name of ship</p>
+				<input type="text" name="nameofship" /> <input
+					type="submit" value="Get Shipwreck Data" />
+			</form>
+			<form action="SearchShipwrecksByYear.do" method="GET">
+				<p>Year sunk</p>
+				<input type="text" name="yearsunk" /> <input
+					type="submit" value="Get Shipwreck Data" />
+			</form>
+			</div>
+		</div>
+		<footer></footer>
+	</div>
+</body>
+</html>
+
+
+
+
+

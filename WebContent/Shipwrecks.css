@@ -1,0 +1,168 @@
+.mainimage {
+	background-image: url("http://cdn.pcwallart.com/images/ocean-underwater-light-wallpaper-3.jpg");  
+	/* "http://i64.tinypic.com/2iikj0g.jpg" */
+	background-repeat: no-repeat;
+	padding: 10px 10px 100px 10px;
+	background-size: 100%;
+	width: 100%;
+	height: 500px;
+	max-height: 600px;
+	text-align: center;
+}
+
+.headtext {
+	font-family: 'Fjalla One', sans-serif;
+	color:#f9f9d4;
+	font-size: 80px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.floatleft {
+	float: left; 
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+.floatright {
+	float: right;
+	padding-right: 100px;
+	margin-top: 30px;
+	
+}
+
+.whitebackground {
+	background-color: rgba(255,255,255, .7);
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin-top: 77px;
+}
+
+#visibility {
+	font-family: 'Fjalla One', sans-serif;
+	color:#f9f9d4;
+	font-size: 40px;
+}
+
+input[type=submit] {
+	font-family: 'Fjalla One', sans-serif;
+	background-color:#f9f9d4;
+	color: rgb(27,153,201);
+	font-size: 15px;
+	margin-left: 15px;
+}
+
+
+#specificinfo {
+	font-family: 'Fjalla One', sans-serif;
+	color:#f9f9d4;
+	font-size: 40px;
+}
+
+.headtext2 {
+	font-family: 'Fjalla One', sans-serif;
+	color:#f9f9d4;
+	font-size: 50px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	
+}
+
+.headerbackground {
+	background-color: rgba(255,255,255, .3);
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.centertable {
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shipwreckBackground {
+	
+	background-image: url("http://i64.tinypic.com/2iikj0g.jpg");  
+	background-repeat: no-repeat;
+	padding: 10px 10px 100px 10px;
+	background-size: 100%;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	
+	
+}
+
+#visibilitytable td {
+	padding-top: 5px;
+    padding-bottom: .5em;
+
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0 1.5em;
+	padding-top: 30px;
+}
+
+.visibilityTable > a {
+	color: rgb(181,101,29);
+	text-decoration: none;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+	
+}
+
+form > p {
+	color: rgb(181,101,29);
+	text-decoration: none;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+}
+
+.visibilityTable {
+	background-color: rgba(255,255,255, .7);
+	
+	padding-left: 50px;
+	padding-right: 50px;
+	
+	
+	
+}
+
+.navbar {
+	background-color: rgba(249,249,212,1);
+	width: 102%;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.navelement {
+	color: rgb(27,153,201);
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	padding-left: 20px;	
+	
+}
+
+/*  just for allships.jsp */
+
+.bluebackground {
+	background-color: rgb(27,153,201);
+	
+}
+
+.yellowbackground {
+	background-color: rgba(249,249,212,1);
+	margin-left: auto;
+	margin-right: auto;
+	float: center;
+	padding-left: 20px;
+}
+
