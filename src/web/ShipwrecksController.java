@@ -75,12 +75,15 @@ public class ShipwrecksController {
 		return mv;
 	}
 // this deletes your shipwreck
-	@RequestMapping(path = "deleteShipwreck.do")
-	public ModelAndView deleteWreck(Wreck wreck) {
-		System.out.println("Got here");
+	@RequestMapping("deleteShipwreck.do")
+	public ModelAndView deleteWreck(@RequestParam("name") String a) {
+		wreck = wreckDao.getWreckbyRecord(a);
+		System.out.println("Got here with:" + wreck);
 		wreckDao.deleteWreck(wreck);
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("deleted.html");
+		mv.setViewName("allShips.jsp");
+		mv.addObject("wrecks", wreckDao.getAllWrecks());
+		System.out.println(wreckDao.getAllWrecks());
 		return mv;
 	}
 // this brings up the form for you to edit your shipwreck

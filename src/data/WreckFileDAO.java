@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
 public class WreckFileDAO implements WreckDAO {
-	private static final String FILE_NAME ="/WEB-INF/Wrecks_Test_NoLine.csv";
+	private static final String FILE_NAME ="/WEB-INF/Shipwrecks_Final.csv";
 	
 	private  Map<Integer, Wreck> wrecksMap = new HashMap<Integer, Wreck>();
 	List<Wreck> wrecksList =
@@ -130,7 +130,10 @@ public class WreckFileDAO implements WreckDAO {
 	}
 	
 	public void deleteWreck(Wreck wreck) {
-		wrecksMap.remove(wreck);  //wrecksMap.remove(wreck.getRecord()
+		System.out.println("Made it into the delete method and is deleting:" + wreck.getRecord());
+		wrecksMap.remove(wreck.getRecord());  //wrecksMap.remove(wreck.getRecord()
+		System.out.println(wrecksMap);
+		System.out.println("I've removed:" + wreck.getRecord());
 	}
 	
 	public void updateWreck(Wreck wreck) {
@@ -155,7 +158,6 @@ public class WreckFileDAO implements WreckDAO {
 //		}
 //		return w;
 //	}
-	
 	
 	public List<Wreck> getAllWrecks() {
 		List<Wreck> wrecksList =

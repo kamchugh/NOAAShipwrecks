@@ -102,7 +102,7 @@
 						<td colspan="2">
 						<%-- <p>${wreck.latitute}</p>
 						<p>${wreck.longitude}</p> --%>
-						<a href="deleteShipwreck.do"><button class="deletebutton"
+						<a href="deleteShipwreck.do?name=${wreck.record}"><button class="deletebutton"
 							type="button" name="delete">Delete</button></a>
 						<a href="editShipwreck.do?name=${wreck.record}"><button
 							class="deletebutton" type="button" name="${wreck.record}">Edit</button></a>

@@ -28,7 +28,7 @@
 						<p class="shipinfo">Lat: ${wreck.latitute} Long:
 							${wreck.longitude}</p></td>
 							<td>
-						<a href="deleteShipwreck.do"><button class="deletebutton" type="button" name="delete"> X </button></a></td>
+						<a href="deleteShipwreck.do?name=${wreck.record}"><button class="deletebutton" type="submit" name="delete"> X </button></a></td>
 				</tr>
 			</table>
 		</c:if>
